@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,7 +9,7 @@ body {
   margin: 0px;
   color: #333;
   --type-first: Helvetica, Arial, sans-serif;
-  --type-second: 'Quicksand', georgia;
+  --type-second: 'Spectral', Georgia;
   font-family: var(--type-first);
 }
 
@@ -43,12 +43,17 @@ input {
 
 a {
   text-decoration: none;
+  color: #333;
 }
 
 .container {
   max-width: 50rem;
   padding: 0 1rem;
   margin: 0 auto;
+}
+
+.mainContainer {
+  margin-top: 2rem;
 }
 
 .title {
@@ -67,7 +72,7 @@ a {
   height: 1.5rem;
   background: #fb1;
   position: absolute;
-  bottom: 1px;
+  bottom: 5px;
   left: -5px;
   border-radius: 0.2rem;
   z-index: -1;
@@ -84,4 +89,18 @@ a {
     opacity: 1;
     transform: initial;
   }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + 10rem);
+}
+
+.AppBody {
+  flex: 1;
+}
+
+.VictoryContainer {
+  height: initial !important;
 }
